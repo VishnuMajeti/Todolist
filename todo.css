@@ -1,19 +1,20 @@
+/* css code to create Todo-List  */
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
 
-
+ /* To check the  checked class */
 .checked{
     text-decoration: line-through;
     color: darkred;
 }
 
-
+    /* To check the todos-bg-container class */
 .todos-bg-container {
-/*    background-color: #f9fbfe;*/
+   background-color: #2e738a;
     height: 100vh;
     background-color: linear-gradient(to bottom, #FFC0CB, #00FFFF, #FFD700);
     display: flex;
 }
-
+    /* To check the todos-heading class */
 .todos-heading {
     text-align: center;
     font-family: "Roboto";
@@ -24,42 +25,42 @@
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
+/* To check the create-task-heading class */
 .create-task-heading {
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 700;
 }
-
+/* To check the create-task-heading-subpart class */
 .create-task-heading-subpart {
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 500;
 }
-
+/* To check the todo-items-heading  class */
 .todo-items-heading {
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 700;
 }
-
+/* To check the todo-items-heading-subpart class */
 .todo-items-heading-subpart {
     font-family: "Roboto";
     font-size: 32px;
     font-weight: 500;
 }
-
+/* To check the todo-items-container class */
 .todo-items-container {
     margin: 0px;
     padding: 0px;
 }
-
+/* To check the todo-item-container  class */
 .todo-item-container {
     margin-top: 15px;
 }
-
+/* To check the odo-user-input class */
 .todo-user-input {
-    background-color: white;
+    background-color: rgb(250, 242, 242);
     width: 100%;
     border-style: solid;
     border-width: 1px;
@@ -68,9 +69,9 @@
     margin-top: 10px;
     padding: 15px;
 }
-
+/* To check the add-todo-button class */
 .add-todo-button {
-    color: white;
+    color: rgb(239, 235, 235);
     background-color: #4c63b6;
     font-family: "Roboto";
     font-size: 18px;
@@ -83,26 +84,26 @@
     padding-right: 20px;
     padding-left: 20px;
 }
-
+/* To check the label-container class */
 .label-container {
-    background-color: #e6f6ff;
+    background-color: #f7fafa;
     width: 100%;
     border-style: solid;
     border-width: 5px;
-    border-color: #096f92;
+    border-color: #2c0477;
     border-right: none;
     border-top: none;
     border-bottom: none;
     border-radius: 4px;
 }
-
+/* To check the checkbox-input class */
 .checkbox-input {
     width: 20px;
     height: 20px;
     margin-top: 12px;
     margin-right: 12px;
 }
-
+/* To check the checkbox-label class */
 .checkbox-label {
     font-family: "Roboto";
     font-size: 16px;
@@ -115,12 +116,12 @@
     padding-right: 20px;
     border-radius: 5px;
 }
-
+/* To check the delete-icon-container class */
 .delete-icon-container {
     text-align: right;
     width: 18%;
 }
-
+/* To check the delete-icon class */
 .delete-icon {
     padding: 15px;
 }
