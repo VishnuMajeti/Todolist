@@ -1,3 +1,6 @@
+//  java script code to create Todo-List App
+ 
+  // to access the html classes in  java script 
 let todoItemsContainer = document.getElementById("todoItemsContainer");
 let addTodobutton=document.getElementById("addTodobutton");
  
@@ -7,7 +10,7 @@ saveTodoButton.onclick=function(){
   localStorage.setItem('todoList',JSON.stringify(todoList));
 }
 
-
+  // to access the getTodoFromLocalStorage 
 function getTodoFromLocalStorage(){
   let GettingTodo=localStorage.getItem('todoList');
   let parsedTodo=JSON.parse(GettingTodo);
@@ -19,7 +22,7 @@ function getTodoFromLocalStorage(){
   }
 }
 
-
+//to access the todo list functions via checkbox Id , label Id, todo Id
 let todoList =getTodoFromLocalStorage();
  
 function createAndAppendTodo(todo) {
@@ -46,7 +49,7 @@ function createAndAppendTodo(todo) {
 
     });
 
-
+      // to access the TodoObject via let 
       let TodoObject=todoList[TodoObjectindex];
 
       if(TodoObject.isChecked===true){
@@ -57,7 +60,7 @@ function createAndAppendTodo(todo) {
 
   }
   
-
+   // to access the removeTodo function 
   function removeTodo(todoId){
     let todoElementId=document.getElementById(todoId);
     todoItemsContainer.removeChild(todoElement);
@@ -72,7 +75,7 @@ function createAndAppendTodo(todo) {
     todoList.splice(deleteIndex,1);
     console.log(todoList);
   }
-
+   // to create an element and  to append child 
   let todoElement = document.createElement("li");
   todoElement.classList.add("todo-item-container", "d-flex", "flex-row");
   todoElement.id=todoId;
@@ -115,7 +118,7 @@ function createAndAppendTodo(todo) {
 }
 
 
-
+// to access the OnAddTodo function 
 
 function OnAddTodo(){
   let todoCount=todoList.length;
@@ -149,8 +152,12 @@ addTodobutton.onclick = function(){
  };
 
  
-
+// to access the createAndAppendTodo loop
 
 for (let todo of todoList) {
   createAndAppendTodo(todo);
 }
+
+
+
+ 
